@@ -1,0 +1,45 @@
+@media (min-width: 1399.38px) {
+  .container {
+    width: 84px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
+  a.nav-link {
+    padding: 0.8rem;
+  }
+
+  .text-home-bold {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 68px;
+  }
+
+  .text-home-reguler {
+    margin-top: 20px;
+  }
+
+  .home-img {
+    margin-top: 50px;
+  }
+
+  .about-content {
+    margin-top: 50px;
+  }
+
+  .gallery-img {
+    margin-top: 50px;
+  }
+
+  .newslatter-content {
+    padding: 3.5rem !important;
+  }
+
+  .newslatter input.form-control {
+    width: 100%;
+  }
+}

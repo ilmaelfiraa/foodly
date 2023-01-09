@@ -1,0 +1,280 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Variables CSS */
+:root {
+  /* Colors */
+  --primary-color: #ba2530;
+  --primary-light-color: #ffd6d7;
+  --yellow-color: #fec65e;
+  --white-color: #fff;
+  --black-color: #323232;
+
+  /* Font & Typography */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 58px;
+  --h1-font-size: 45px;
+  --normal-font-size: 18px;
+  --small-font-size: 16px;
+  --smaller-font-size: 14px;
+
+  /* Font Weight */
+  --font-semibold: 600;
+  --font-medium: 500;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-dark {
+  color: var(--black-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light-color) !important;
+}
+
+/* Costum Scrollbar */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+  padding: 12px;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand span {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.nav-link {
+  margin-right: 39px;
+  font-weight: var(--font-medium);
+  color: var(--black-color);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+/* Button */
+.btn {
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: drop-shadow(0px 10px 30px rgba(186, 37, 48, 0.15));
+  background-color: var(--primary-color);
+}
+
+.btn-primary-light {
+  color: var(--primary-color);
+  background-color: var(--primary-light-color);
+}
+
+.btn-video-play {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  font-size: 30px;
+}
+
+.btn-video-play i {
+  color: var(--yellow-color);
+  line-height: 3rem;
+}
+
+.btn-video-play:hover i {
+  color: var(--primary-color);
+}
+
+.btn-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: 0.725rem 0.913rem;
+  border-radius: 0.5rem;
+}
+
+/* Badge  */
+.badge {
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-weight: var(--font-medium);
+}
+
+/* Home */
+section.home {
+  padding: 10rem 0 10rem;
+}
+
+.text-home-bold {
+  font-size: var(--biggest-font-size);
+  line-height: 87px;
+}
+
+.text-home-bold span {
+  color: var(--primary-color);
+}
+
+.text-home-reguler {
+  font-size: var(--normal-font-size);
+  line-height: 27px;
+}
+
+.home-btn .video-play {
+  font-weight: var(--font-medium);
+  padding: 1rem;
+}
+
+/* Services */
+section.services .content .services-title {
+  font-weight: var(--font-semibold);
+}
+
+/* About */
+section.about {
+  padding: 10rem 0 10rem;
+}
+
+/* Menu */
+section.menu .card-menu {
+  filter: drop-shadow(0px 5.42857px 40.7143px rgba(0, 0, 0, 0.05));
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+section.menu .card-menu .item {
+  position: relative;
+}
+
+section.menu .card-menu .item img {
+  width: 100%;
+}
+
+section.menu .card-menu .item .menu-title {
+  font-weight: var(--font-semibold);
+}
+
+/* Testimonials */
+section.testimonials {
+  padding: 10rem 0 10rem;
+}
+
+section.testimonials .content-testimonials i {
+  color: var(--yellow-color);
+  font-size: 1.3rem;
+}
+
+section.testimonials .carousel-indicators {
+  bottom: -3rem;
+}
+
+section.testimonials .carousel-indicators button {
+  width: 0.7rem;
+  height: 0.7rem;
+  outline: none;
+  border: none;
+  margin-right: 0.2rem;
+}
+
+/* Gallery */
+
+/* Newslatter */
+section.newslatter {
+  padding: 10rem 0 10rem;
+}
+
+.newslatter-content {
+  padding: 6rem;
+  border-radius: 10px;
+}
+
+.form-newslatter {
+  display: flex;
+  justify-content: center;
+}
+
+input .form-newslatter::placeholder {
+  font-size: 15px !important;
+}
+
+input.form-control {
+  box-shadow: 0px 4px 20px rgb(0, 0, 0 / 8%);
+  border-radius: 10px;
+  border: none;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 25rem;
+  height: 3.3rem;
+}
+
+/* Footer */
+.footer-section .footer-brand span {
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+
+footer.footer-section .copyright {
+  font-size: var(--smaller-font-size);
+  padding: 1rem;
+}
+
+.footer-content span {
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+
+.footer-link li a {
+  color: var(--black-color);
+}
+
+.footer-link li a:hover {
+  color: var(--primary-color);
+}
